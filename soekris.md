@@ -103,12 +103,12 @@ Premier boot.
 Install
 -------
 
-Download du ramdisk et du booloader /pub/OpenBSD/VERSION/i386/ et les rendre disponibles par TFTP
+Download du ramdisk et du booloader i386 depuis un ftp OpenBSD et rendre disponibles ces fichiers par TFTP.
 
     pxeboot
     bsd.rd
 
-Configurer le DHCP
+Configurer le DHCP.
 
     host gw {
           hardware ethernet XX:XX:XX:XX:XX:XX;
@@ -117,7 +117,7 @@ Configurer le DHCP
           filename "pxeboot";             
     }
 
-On tape reboot
+On tape reboot.
 
     CLIENT MAC ADDR: 00 00 24 D0 99 48                                             
     CLIENT IP: X.X.X.X  MASK: X.X.X.X  DHCP IP: X.X.X.X         
