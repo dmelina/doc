@@ -7,7 +7,7 @@ Unboxing
 Premier boot
 ------------
 
-* Utiliser un cable série/USB et configurer minicom de la manière suivante
+Utiliser un cable série/USB et configurer minicom de la manière suivante.
 
     # Machine-generated file - use "minicom -s" to change parameters.
     pu port             /dev/ttyUSB0
@@ -17,7 +17,7 @@ Premier boot
     pu stopbits         1
 
 
-* Premier boot
+Premier boot.
 
     comBIOS ver. 1.41c  20121115  Copyright (C) 2000-2011 Soekris Engineering.
     
@@ -103,13 +103,12 @@ Premier boot
 Install
 -------
 
-* Download du ramdisk et du booloader /pub/OpenBSD/VERSION/i386/
+Download du ramdisk et du booloader /pub/OpenBSD/VERSION/i386/ et les rendre disponibles par TFTP
 
     pxeboot
     bsd.rd
 
-* Rendre ces fichiers disponible par TFTP
-* Configure le DHCP
+Configurer le DHCP
 
     host gw {
           hardware ethernet XX:XX:XX:XX:XX:XX;
@@ -118,7 +117,7 @@ Install
           filename "pxeboot";             
     }
 
-* On tape reboot
+On tape reboot
 
     CLIENT MAC ADDR: 00 00 24 D0 99 48                                             
     CLIENT IP: X.X.X.X  MASK: X.X.X.X  DHCP IP: X.X.X.X         
@@ -134,7 +133,7 @@ Install
     boot> bsd.rd                                         
 
 
-* Quand on vous pose la question de vouloir setter sur com0 le boot et la console, vous dite mais bien sûr :)
+Quand on vous pose la question de vouloir setter sur com0 le boot et la console, vous dite mais bien sûr :)
 
     CONGRATULATIONS! Your OpenBSD install has been successfully completed!
     To boot the new system, enter 'reboot' at the command prompt.
