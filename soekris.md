@@ -4,6 +4,8 @@ Soekris 6501-70
 Unboxing
 --------
 
+![Soekris unboxing](https://raw.githubusercontent.com/dmelina/doc/master/img/unboxing.jpg)
+
 Premier boot
 ------------
 
